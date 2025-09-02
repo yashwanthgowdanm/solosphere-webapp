@@ -1,0 +1,25 @@
+/* SoloSphere brand helpers */
+:root {
+  --brand-primary: #0ea5e9;
+  --brand-primary-dark: #0284c7;
+  --brand-accent: #f59e0b;
+  --brand-muted: #94a3b8;
+}
+
+/* Glass and elevation */
+.glass { background: rgba(255,255,255,.08); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.15); }
+.card { border-radius: 1rem; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.06); backdrop-filter: blur(8px); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.card, .btn { transition: all .25s ease; }
+
+/* Simple grid animation */
+@keyframes fadeUp { from { opacity:0; transform: translateY(8px)} to {opacity:1; transform: translateY(0)} }
+.fade-up { animation: fadeUp .6s ease both; }
+
+.btn-primary { background: var(--brand-primary); }
+.btn-primary:hover { background: var(--brand-primary-dark); }
+
+.text-gradient {
+  background: linear-gradient(90deg, #0ea5e9, #22d3ee, #a78bfa);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
