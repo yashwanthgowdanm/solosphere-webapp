@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloSphere – Static</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <!-- Tailwind CDN (no build step needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Tailwind config to keep fonts/sizing similar
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            headline: ['ui-sans-serif','system-ui','Segoe UI','Roboto','Helvetica','Arial','Noto Sans','sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-background text-foreground">
+  <div class="max-w-6xl mx-auto p-6 md:p-10 grid gap-8 animate-fade-in">
+    <header class="text-center">
+      <h1 class="text-4xl md:text-5xl font-headline tracking-tight">Welcome to SoloSphere</h1>
+      <p class="mt-2 text-lg text-slate-500">Your journey, your pace. What adventure awaits you today?</p>
+    </header>
+
+    <section class="grid gap-6 md:grid-cols-2">
+      <a href="explore.html" class="block rounded-2xl border border-slate-200 p-6 card-hover bg-white/80 backdrop-blur-sm">
+        <h2 class="text-xl font-semibold mb-2">🗺️ Explore Nearby</h2>
+        <p class="text-slate-600">Discover attractions, eateries, and hidden gems around you.</p>
+      </a>
+
+      <a href="planner.html" class="block rounded-2xl border border-slate-200 p-6 card-hover bg-white/80 backdrop-blur-sm">
+        <h2 class="text-xl font-semibold mb-2">📝 Trip Planner</h2>
+        <p class="text-slate-600">Draft itineraries and keep everything organized.</p>
+      </a>
+
+      <a href="budget.html" class="block rounded-2xl border border-slate-200 p-6 card-hover bg-white/80 backdrop-blur-sm">
+        <h2 class="text-xl font-semibold mb-2">💰 Budget</h2>
+        <p class="text-slate-600">Estimate expenses and keep trips on budget.</p>
+      </a>
+
+      <a href="safety.html" class="block rounded-2xl border border-slate-200 p-6 card-hover bg-white/80 backdrop-blur-sm">
+        <h2 class="text-xl font-semibold mb-2">🛡️ Safety Tips</h2>
+        <p class="text-slate-600">Practical guidance to stay safe while you explore.</p>
+      </a>
+    </section>
+
+    <footer class="pt-6 text-center text-sm text-slate-500">
+      Static snapshot generated for GitHub Pages. Original app built with Next.js & Tailwind.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

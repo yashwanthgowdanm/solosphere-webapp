@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trip Planner – SoloSphere</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="min-h-screen bg-background text-foreground">
+  <div class="max-w-5xl mx-auto p-6 md:p-10 grid gap-8 animate-fade-in">
+    <nav class="text-sm"><a href="index.html" class="underline">← Back</a></nav>
+    <header>
+      <h1 class="text-3xl md:text-4xl font-headline tracking-tight">Trip Planner</h1>
+      <p class="mt-2 text-slate-600">A very light, static itinerary editor (no backend).</p>
+    </header>
+    <main class="grid gap-6">
+    <div class="rounded-2xl border border-slate-200 p-6 bg-white/80">
+      <label class="block text-sm font-medium mb-2">Add itinerary item</label>
+      <div class="flex gap-2">
+        <input id="todo-input" type="text" class="flex-1 border rounded-lg px-3 py-2" placeholder="e.g., Book hostel, Museum 10am" />
+        <button onclick="addTodo()" class="border px-3 py-2 rounded-lg">Add</button>
+      </div>
+      <ul id="todo-list" class="mt-4 space-y-2"></ul>
+    </div>
+    </main>
+    <footer class="pt-6 text-center text-xs text-slate-500">Static snapshot</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
